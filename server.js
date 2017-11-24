@@ -13,7 +13,7 @@ five.Board().on("ready", function () {
     });
 
     led.on();
-    led.color("#FF0000");
+    led.color("#fc0309");
 
     socket.on('connect', function () {
         console.log('Client connected');
