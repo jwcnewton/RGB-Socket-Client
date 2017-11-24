@@ -8,7 +8,7 @@ socket.on('connect', function(){
 });
 
 socket.on('rgb-pull', function(data){
-    rgbHandler.changeColour(data);
+    rgbHandler.changeColour(data.text);
 });
 
 socket.on('disconnect', function(){
