@@ -4,17 +4,10 @@ var socket = io.connect(socketUrl, { reconnect: true });
 var five = require("johnny-five");
 
 five.Board().on("ready", function () {
-    var led = new five.Led.RGB({
-        pins: {
-            red: 6,
-            green: 5,
-            blue: 3
-        }
-    });
+    var led = new five.Led.RGB([6, 5, 3]);
 
-    led.on();
-    led.color("#fc0309");
-
+    led.color("#FF0000");
+  
     socket.on('connect', function () {
         console.log('Client connected');
     });
