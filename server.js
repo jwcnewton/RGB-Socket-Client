@@ -20,6 +20,7 @@ five.Board().on("ready", function () {
     });
 
     socket.on('rgb-pull', function (data) {
+        var colour = data.text;
         let hexColour = rgbToHex(colour[0], colour[1], colour[2]);
         console.log(hexColour);
         led.color(hexColour);
