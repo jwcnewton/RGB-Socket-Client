@@ -7,7 +7,7 @@ five.Board().on("ready", function () {
     var led = new five.Led.RGB([6, 5, 3]);
 
     led.color("#FF0000");
-  
+    led.intensity(100);
     socket.on('connect', function () {
         console.log('Client connected');
     });
