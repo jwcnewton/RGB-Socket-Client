@@ -1,0 +1,15 @@
+{
+  "name": "socket-rgb",
+  "version": "1.0.0",
+  "description": "Socket.io + pi + uno",
+  "main": "server.js",
+  "scripts": {
+    "start": "sudo node server.js"
+  },
+  "author": "Jonathan Newton",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io-client": "^2.0.4",
+    "johnny-five": "^0.11.6"
+  }
+}
