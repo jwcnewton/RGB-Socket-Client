@@ -1,4 +1,4 @@
-const socket = require('socket.io-client');
+const io = require('socket.io-client');
 const socketUrl = 'https://rgb-socket-api.herokuapp.com/';
 var socket = io.connect(socketUrl, {reconnect: true});
 const rgbHandler = require('./src/rgbHandler.js');
