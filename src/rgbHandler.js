@@ -25,9 +25,10 @@ function rgbToHex(r, g, b) {
 }
 
 let changeColour = (colour) => {
-    console.log(colour);
-    let hexColour = rgbToHex(colour[0], colour[1], colour[2])
+    let hexColour = rgbToHex(colour[0], colour[1], colour[2]);
+    console.log(hexColour);
     led.color(hexColour);
+    led.pulse(500);
 }
 
 exports.changeColour = changeColour;
